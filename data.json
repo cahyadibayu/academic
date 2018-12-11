@@ -1,0 +1,32 @@
+[
+	{
+		"title": "Fakultas Teknik",
+		"picUrl": "bg-web.png",
+    "description":"This is a Test",
+    "refUrl":"eng.ui.ac.id"
+	},
+  {
+		"title": "Fakultas Kedokteran",
+		"picUrl": "bg-web.png",
+    "description":"This is a Test",
+    "refUrl":"eng.ui.ac.id"
+	},
+  {
+		"title": "Fakultas Kedokteran Gigi",
+		"picUrl": "bg-web.png",
+    "description":"This is a Test",
+    "refUrl":"eng.ui.ac.id"
+	},
+  {
+		"title": "Fakultas Matematika dan Ilmu Pengetahuan",
+		"picUrl": "bg-web.png",
+    "description":"This is a Test",
+    "refUrl":"eng.ui.ac.id"
+	},
+  {
+		"title": "Fakultas Psikologi",
+		"picUrl": "bg-web.png",
+    "description":"This is a Test",
+    "refUrl":"eng.ui.ac.id"
+	}
+]
