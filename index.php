@@ -97,16 +97,17 @@
     $('#articleList').listview('refresh');
   });
 
-  function generateArticleLink(article){
-    return '<li><a href="javascript:void(0)" onclick=goToArticleDetailPage(\''
-          + article.title
+  function generateArticleLink(x){
+    return '<li><a href="javascript:void(0)'
+          + '" onclick="goToArticleDetailPage(\''
+          + x.title
           + '\',\''
-          + article.picUrl
+          + x.picUrl
           + '\',\''
-          + article.description
+          + x.description
           + '\',\''
-          + article.refUrl + '\')">'
-          + article.title
+          + x.refUrl + '\')">'
+          + x.title
           + '</a></li>';
   }
 
