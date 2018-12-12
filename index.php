@@ -19,8 +19,10 @@
     <a href="#panelL1" data-iconpos="notext" data-icon="bars">Menu</a>
     <a href="#search" data-iconpos="notext" data-icon="search">Search</a>
   </header>
+
+  <!-- ####################################################################################################################################### -->
   <div data-role="panel" id="panelL1" data-position="left" data-display="overlay" data-dismissible="true" data-theme="b" class="panel-0pad">
-    <ul data-role="listview">
+    <ul data-role="listview" id="panelList">
       <li data-icon="false"><a data-rel="close" href="#home">Beranda</a></li>
       <div data-role="collapsible" data-collapsed-icon="carat-d" data-expanded-icon="carat-u" data-iconpos="right">
         <h4>Fakultas</h4>
@@ -45,39 +47,16 @@
   <div class="bg-img"></div>
   </div>
 
+<!-- ################################################################################################################### -->
 <!-- Search Page -->
+
 <div data-role="page" id="search">
   <header data-role="header" data-position="fixed">
   <a data-rel="back" data-direction="reverse" href="#home">Back</a>
   <h1>Academic Guide UI</h1>
-  <!-- <a href="#panelL2" data-iconpos="notext" data-icon="bars">Menu</a> -->
+
 </header>
-<!--
-<div data-role="panel" id="panelL2" data-position="left" data-display="overlay" data-dismissible="true" data-theme="b" class="panel-0pad">
-  <ul data-role="listview">
-    <li data-icon="false"><a data-rel="close" href="#home">Beranda</a></li>
-    <div data-role="collapsible" data-collapsed-icon="carat-d" data-expanded-icon="carat-u" data-iconpos="right">
-      <h4>Fakultas</h4>
-      <ul data-role="listview" data-inset="false">
-        <li>Fakultas Kedokteran</li>
-        <li>Fakultas Kedokteran Gigi</li>
-        <li>Fakultas Teknik</li>
-      </ul>
-    </div>
-    <li data-icon="false"><a data-rel="close" href="#cart">Pembayaran</a></li>
-    <div data-role="collapsible" data-collapsed-icon="carat-d" data-expanded-icon="carat-u" data-iconpos="right">
-      <h4>Websites</h4>
-      <ul data-role="listview" data-inset="false">
-        <li>SCeLE</li>
-        <li>SIAK-NG</li>
-      </ul>
-    </div>
-    <li data-icon="false"><a data-rel="close" href="#register">Beasiswa</a></li>
-    <li data-icon="false"><a data-rel="close" href="#help">Tentang</a></li>
-  </ul>
-</div>
--->
-<!--  ###############################################################################-->
+
 <form class="ui-filterable">
     <input id="filterBasic-input" data-type="search">
 </form>
@@ -85,6 +64,7 @@
 </ul>
 </div>
 
+<!-- SCRIPT untuk Dynamic List dan Dynamic Page    -->
 <script type="text/javascript">
 
   $.getJSON("data.json",function(articles){
