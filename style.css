@@ -15,3 +15,7 @@
 #home{
   position: fixed;
 }
+
+p{
+  text-align: justify;
+}
