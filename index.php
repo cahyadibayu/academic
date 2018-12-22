@@ -23,7 +23,6 @@
   <!-- ####################################################################################################################################### -->
   <div data-role="panel" id="panelL1" data-position="left" data-display="overlay" data-dismissible="true" data-theme="b" class="panel-0pad">
     <ul data-role="listview" id="panelList">
-      <li data-icon="false"><a data-rel="close" href="#home">Beranda</a></li>
       <div data-role="collapsible" data-collapsed-icon="carat-d" data-expanded-icon="carat-u" data-iconpos="right">
         <h4>Fakultas</h4>
         <ul data-role="listview" data-inset="false">
@@ -32,7 +31,7 @@
           <li>Fakultas Teknik</li>
         </ul>
       </div>
-      <li data-icon="false"><a data-rel="close" href="#cart">Pembayaran</a></li>
+      <li data-icon="false"><a data-rel="close" href="#">Pembayaran</a></li>
       <div data-role="collapsible" data-collapsed-icon="carat-d" data-expanded-icon="carat-u" data-iconpos="right">
         <h4>Websites</h4>
         <ul data-role="listview" data-inset="false">
@@ -41,7 +40,6 @@
         </ul>
       </div>
       <li data-icon="false"><a data-rel="close" href="#register">Beasiswa</a></li>
-      <li data-icon="false"><a data-rel="close" href="#help">Tentang</a></li>
     </ul>
   </div>
   <div class="bg-img"></div>
