@@ -33,5 +33,48 @@
 		"picUrl": "bg-web.png",
     "description":"This is a Test",
     "refUrl":"eng.ui.ac.id"
+	},
+	{
+		"id":2,
+		"title": "Pembayaran BOP-B",
+		"picUrl": "bg-web.png",
+    "description":"This is a Test",
+    "refUrl":"eng.ui.ac.id"
+	},
+	{
+		"id":2,
+		"title": "Pembayaran BOP-P",
+		"picUrl": "bg-web.png",
+    "description":"This is a Test",
+    "refUrl":"eng.ui.ac.id"
+	},
+	{
+		"id":3,
+		"title": "SCeLE",
+		"picUrl": "bg-web.png",
+    "description":"This is a Test",
+    "refUrl":"eng.ui.ac.id"
+	},
+	{
+		"id":3,
+		"title": "SIAK-NG",
+		"picUrl": "bg-web.png",
+    "description":"This is a Test",
+    "refUrl":"eng.ui.ac.id"
+	},
+	{
+		"id":4,
+		"title": "Beasiswa Lokal",
+		"picUrl": "bg-web.png",
+    "description":"This is a Test",
+    "refUrl":"eng.ui.ac.id"
+	},
+	{
+		"id":4,
+		"title": "Beasiswa Internasional",
+		"picUrl": "bg-web.png",
+    "description":"This is a Test",
+    "refUrl":"eng.ui.ac.id"
 	}
+
 ]
