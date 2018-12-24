@@ -34,9 +34,10 @@ function getObjects(obj, key, val) {
 
 function specific(myNum,address){
   $.getJSON("data.json",function(data){
+    var data1 = [];
     $(address).empty();
-    getObjects(data,'id',myNum);
-      $.each(objects,function(i,article){
+    data1 = getObjects(data,'id',myNum);
+      $.each(data1,function(i,article){
           $(address).append(generateArticleLink(article));
       });
     $(address).listview('refresh');
@@ -44,6 +45,9 @@ function specific(myNum,address){
 }
 
 specific('1','#data1');
+specific('2','#data2');
+specific('3','#data3');
+specific('4','#data4');
 
 
 
