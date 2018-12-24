@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>Academic Guide UI</title>
+  <link rel="stylesheet" href="jquery.mobile-1.4.5.css" /><!-- code.jquery.com/mobile/1.4.5 -->
+  <link rel="stylesheet" href="style.css" />
+  <script src="jquery-1.11.1.js"></script><!-- from code.jquery.com -->
+  <script src="jquery.mobile-1.4.5.js"></script><!-- code.jquery.com/mobile/1.4.5 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <link rel="stylesheet" href="swiper.css" />
+  <script src="swiper.js"></script>
+
+  <script type="text/javascript">
+
+  $(document).on('pageshow','#details', function() {
+    var swiper = new Swiper('.swiper-container', {
+      pagination: '.swiper-pagination'
+
+    });
+  });
+
+
+
+
+  </script>
+</head>
+<body>
+  <div data-role="page" id="details">
+    <header data-role="header" data-position="fixed">
+    <a data-rel="back" data-direction="reverse" href="#home">Back</a>
+    <h1>Academic Guide UI</h1>
+  </header>
+  <content data-role="content">
+
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide" style="background-image:url(rama.png)"></div>
+        <div class="swiper-slide" style="background-image:url(bg-web.png)"></div>
+        <div class="swiper-slide" style="background-image:url(rama.png)"></div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+    <div style="padding:9px">
+      <h3>Fakultas Kedokteran</h3>
+      <p>This is a Test</p>
+      <p>For more information visit : <a href="http://eng.ui.ac.id" rel="external">eng.ui.ac.id</a></p>
+    </div>
+  </content>
+</div>
+
+</body>
+</html>

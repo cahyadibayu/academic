@@ -8,7 +8,7 @@
   <script src="jquery-1.11.1.js"></script><!-- from code.jquery.com -->
   <script src="jquery.mobile-1.4.5.js"></script><!-- code.jquery.com/mobile/1.4.5 -->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-</head>
+
 <!-- SCRIPT untuk Dynamic List dan Dynamic Page    -->
 <script type="text/javascript">
 function getObjects(obj, key, val) {
@@ -86,6 +86,7 @@ specific('4','#data4');
   }
 
 </script>
+</head>
 <body>
 
   <!-- Home Page -->

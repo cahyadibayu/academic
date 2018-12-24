@@ -35,6 +35,13 @@
     "refUrl":"eng.ui.ac.id"
 	},
 	{
+		"id":1,
+		"title": "Fakultas Ilmu Sosial dan Politik",
+		"picUrl": "bg-web.png",
+    "description":"This is a Test",
+    "refUrl":"eng.ui.ac.id"
+	},
+	{
 		"id":2,
 		"title": "Pembayaran BOP-B",
 		"picUrl": "bg-web.png",
