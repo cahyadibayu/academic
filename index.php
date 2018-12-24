@@ -77,7 +77,7 @@ specific('4','#data4');
   function goToArticleDetailPage(articleName, articlePicUrl, articleDescription, articleRefURL){
     var articlePage = $("<div data-role='page' id='detail'><header data-role='header' data-position='fixed'><a href = '#home' class = 'ui-btn'>Back</a><h1>Academic Guide UI</h1></header><h1>"
                   + articleName + "</h1><div data-role='content'><img border='0' src='"
-                  + articlePicUrl + "' width=204 height=288><img><p>"
+                  + articlePicUrl + "' width=360><img><p>"
                   + articleDescription + "</p><p>For more information visit : <a href='http://"
                   + articleRefURL + "' rel='external'>"
                   + articleRefURL + "</a></p></div>");
