@@ -70,7 +70,9 @@ specific('4','#data4');
           + x.description
           + '\',\''
           + x.refUrl + '\')">'
-          + x.title
+          + x.title + '<img src="'
+          + x.picUrl + '" class = "ui-li-has-thumb"/> <p>'
+          + x.description + '</p>'
           + '</a></li>';
   }
 

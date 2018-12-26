@@ -19,6 +19,7 @@
 p{
   text-align: justify;
 }
+
 .swiper-container {
       width: 100%;
       height: 300px;
@@ -28,8 +29,13 @@ p{
 }
 
 .swiper-pagination{text-align: left !important;margin-bottom: -8px;}
+
 .swiper-slide{
         background-size:cover;
         background-position: center;
 
+}
+
+body{
+  background-color: yellow;
 }
