@@ -8,9 +8,19 @@
   <script src="jquery-1.11.1.js"></script><!-- from code.jquery.com -->
   <script src="jquery.mobile-1.4.5.js"></script><!-- code.jquery.com/mobile/1.4.5 -->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <link rel="stylesheet" href="swiper.css" />
+  <script src="swiper.js"></script>
 
 <!-- SCRIPT untuk Dynamic List dan Dynamic Page    -->
 <script type="text/javascript">
+
+$(document).on('pageshow','#detail', function() {
+  var swiper = new Swiper('.swiper-container', {
+    pagination: '.swiper-pagination'
+
+  });
+});
+
 function getObjects(obj, key, val) {
   var objects = [];
   for (var i in obj) {
@@ -31,14 +41,13 @@ function getObjects(obj, key, val) {
   return objects;
 }
 
-
 function specific(myNum,address){
   $.getJSON("data.json",function(data){
     var data1 = [];
     $(address).empty();
     data1 = getObjects(data,'id',myNum);
       $.each(data1,function(i,article){
-          $(address).append(generateArticleLink(article));
+          $(address).append(generateArticleLinkTab(article));
       });
     $(address).listview('refresh');
   });
@@ -59,6 +68,19 @@ specific('4','#data4');
 
     $('#articleList').listview('refresh');
   });
+  function generateArticleLinkTab(x){
+    return '<li><a href="javascript:void(0)'
+          + '" onclick="goToArticleDetailPage(\''
+          + x.title
+          + '\',\''
+          + x.picUrl
+          + '\',\''
+          + x.description
+          + '\',\''
+          + x.refUrl + '\')">'
+          + x.title
+          + '</a></li>';
+  }
 
   function generateArticleLink(x){
     return '<li><a href="javascript:void(0)'
@@ -87,6 +109,8 @@ specific('4','#data4');
     $.mobile.changePage( articlePage );
   }
 
+  
+
 </script>
 </head>
 <body>
@@ -103,25 +127,25 @@ specific('4','#data4');
   <div data-role="panel" id="panelL1" data-position="left" data-display="overlay" data-dismissible="true" data-theme="b" class="panel-0pad">
     <ul data-role="listview" id="panelList">
       <div data-role="collapsible" data-collapsed-icon="carat-d" data-expanded-icon="carat-u" data-iconpos="right">
-        <h4>Fakultas</h4>
+        <h4>Faculty</h4>
         <ul data-role="listview" data-inset="false" id="data1">
 
         </ul>
       </div>
       <div data-role="collapsible" data-collapsed-icon="carat-d" data-expanded-icon="carat-u" data-iconpos="right">
-        <h4>Pembayaran</h4>
+        <h4>Payment</h4>
         <ul data-role="listview" data-inset="false" id="data2">
 
         </ul>
       </div>
       <div data-role="collapsible" data-collapsed-icon="carat-d" data-expanded-icon="carat-u" data-iconpos="right">
-        <h4>Websites</h4>
+        <h4>General</h4>
         <ul data-role="listview" data-inset="false" id="data3">
 
         </ul>
       </div>
       <div data-role="collapsible" data-collapsed-icon="carat-d" data-expanded-icon="carat-u" data-iconpos="right">
-        <h4>Beasiswa</h4>
+        <h4>Scholar</h4>
         <ul data-role="listview" data-inset="false" id="data4">
 
         </ul>

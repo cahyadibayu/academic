@@ -13,7 +13,7 @@
 
   <script type="text/javascript">
 
-  $(document).on('pageshow','#details', function() {
+  $(document).on('pageshow','#detail', function() {
     var swiper = new Swiper('.swiper-container', {
       pagination: '.swiper-pagination'
 
@@ -26,13 +26,12 @@
   </script>
 </head>
 <body>
-  <div data-role="page" id="details">
+  <div data-role="page" id="detail">
     <header data-role="header" data-position="fixed">
     <a data-rel="back" data-direction="reverse" href="#home">Back</a>
     <h1>Academic Guide UI</h1>
   </header>
   <content data-role="content">
-
     <div class="swiper-container">
       <div class="swiper-wrapper">
         <div class="swiper-slide" style="background-image:url(rama.png)"></div>
@@ -42,12 +41,20 @@
       <div class="swiper-pagination"></div>
     </div>
     <div style="padding:9px">
-      <h3>Fakultas Kedokteran</h3>
-      <p>This is a Test</p>
+      <h1>Fakultas Kedokteran</h1>
+      <h3>Poin - Poin Penting</h3>
+      <div id="poin"></div><br>
+      <script>document.getElementById('poin').innerHTML = '* List Departemen \n * List Jurusan \n * Fasilitas';</script>
       <!--
       <p>For more information visit : <a href="http://eng.ui.ac.id" rel="external">eng.ui.ac.id</a></p>
     -->
-    <a href="http://eng.ui.ac.id"><img src="visit.png" alt="visit" style="width:30%;border:0;background-color: #f1c40f;"></a>
+      <h3>Penjelasan Umum</h3>
+      <div id="umum"></div><br>
+      <script>document.getElementById('umum').innerHTML = 'FK UI adalah fakultas tertua di Universitas Indonesia. FK UI berawal dari Pendidikan dokter di sebuah Rumah Sakit Militer pada tahun 1849. Kemudian, berdirilah STOVIA (School tot Opleiding voor Indische Artsen), sekolah kedokteran pertama di Indonesia. STOVIA inilah yang menjadi cikal bakal FK UI. Sebagai fakultas tertua, FK UI telah banyak melahirkan alumni-alumni hebat. Beberapa alumni FK UI diantaranya adalah dr. Ahmad Sujudi, MHA; Dr. dr. Siti Fadilah Supari, Sp.JP (K); dr. Nafisah Mboi, Sp. A., MPH; Prof. Dr. dr. Nila Farid Moeloek, Sp.M (K) (tiga nama pertama merupakan mantan Menteri Kesehatan RI, nama terakhir adalah Menteri Kesehatan RI saat ini).';</script>
+      <h3>Konten</h3>
+      <div id="konten"></div><br>
+      <script>document.getElementById('konten').innerHTML = 'FK UI adalah fakultas tertua di Universitas Indonesia. FK UI berawal dari Pendidikan dokter di sebuah Rumah Sakit Militer pada tahun 1849. Kemudian, berdirilah STOVIA (School tot Opleiding voor Indische Artsen), sekolah kedokteran pertama di Indonesia. STOVIA inilah yang menjadi cikal bakal FK UI. Sebagai fakultas tertua, FK UI telah banyak melahirkan alumni-alumni hebat. Beberapa alumni FK UI diantaranya adalah dr. Ahmad Sujudi, MHA; Dr. dr. Siti Fadilah Supari, Sp.JP (K); dr. Nafisah Mboi, Sp. A., MPH; Prof. Dr. dr. Nila Farid Moeloek, Sp.M (K) (tiga nama pertama merupakan mantan Menteri Kesehatan RI, nama terakhir adalah Menteri Kesehatan RI saat ini).';</script>
+    <a href="http://eng.ui.ac.id"><img src="visit.png" alt="visit" class="visit"></a>
     </div>
   </content>
 </div>

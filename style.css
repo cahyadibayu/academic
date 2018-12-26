@@ -25,17 +25,30 @@ p{
       height: 300px;
       margin-left: auto;
       margin-right: auto;
+
     border-bottom:1px solid #ccc;
 }
 
 .swiper-pagination{text-align: left !important;margin-bottom: -8px;}
 
 .swiper-slide{
-        background-size:cover;
+        background-size: contain;
+        background-repeat: no-repeat;
         background-position: center;
+        background-position: 50% 50%;
+        margin-top:0;
 
+}
+.visit{
+  width:170px;
+  border:0;
+  background-color: #f1c40f;
 }
 
 body{
   background-color: yellow;
+}
+#poin,#umum,#konten{
+text-align: justify;
+white-space:pre-line;
 }
