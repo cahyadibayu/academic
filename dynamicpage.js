@@ -12,10 +12,10 @@ function goToArticleDetailPage2(articleTitle, articlePoin, articleImages, articl
                   + articleImages[0] + ")'></div><div class='swiper-slide' style='background-image:url("
                   + articleImages[1] + ")'></div><div class='swiper-slide' style='background-image:url("
                   + articleImages[2] + ")'></div></div><div class='swiper-pagination'></div></div><div style='padding:9px'><h1>"
-                  + articleTitle + "</h1><h3>Poin - Poin Penting</h3><div id='poin'></div><br><script>document.getElementById('poin').innerHTML = '"
-                  + articlePoin + "';</script><h3>Penjelasan Umum</h3><div id='umum'></div><br><script>document.getElementById('umum').innerHTML = '"
-                  + articleUmum + "';</script><h3>Konten</h3><div id='konten'></div><br><script>document.getElementById('konten').innerHTML = '"
-                  + articleKonten + "';</script><a href='http://"
+                  + articleTitle + "</h1><h3>Poin - Poin Penting</h3><div id=poin></div><br><script>document.getElementById(\'poin\').innerHTML = \'"
+                  + articlePoin + "\';</script><h3>Penjelasan Umum</h3><div id='umum'></div><br><script>document.getElementById(\'umum\').innerHTML = \'"
+                  + articleUmum + "\'</script><h3>Konten</h3><div id='konten'></div><br><script>document.getElementById(\'konten\').innerHTML = \'"
+                  + articleKonten + "\';</script><a href='http://"
                   + articleRefURL + "''><img src='visit.png' alt='visit' class='visit'></a></div></content></div>");
   articlePage.appendTo( $.mobile.pageContainer );
   $.mobile.changePage( articlePage );
