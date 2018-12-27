@@ -10,6 +10,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
   <link rel="stylesheet" href="swiper.css" />
   <script src="swiper.js"></script>
+  <script src="dynamicpage.js"></script>
+
+
 
 <!-- SCRIPT untuk Dynamic List dan Dynamic Page    -->
 <script type="text/javascript">
@@ -42,10 +45,10 @@ function getObjects(obj, key, val) {
 }
 
 function specific(myNum,address){
-  $.getJSON("data.json",function(data){
+  $.getJSON("uiacademicguideapp.json",function(data){
     var data1 = [];
     $(address).empty();
-    data1 = getObjects(data,'id',myNum);
+    data1 = getObjects(data,'Type',myNum);
       $.each(data1,function(i,article){
           $(address).append(generateArticleLinkTab(article));
       });
@@ -53,13 +56,13 @@ function specific(myNum,address){
   });
 }
 
-specific('1','#data1');
-specific('2','#data2');
-specific('3','#data3');
-specific('4','#data4');
+specific('movie','#data1');
+specific('payment','#data2');
+specific('general','#data3');
+specific('series','#data4');
 
 
-  $.getJSON("data.json",function(articles){
+  $.getJSON("uiacademicguideapp.json",function(articles){
     $('#articleList').empty();
 
     $.each(articles,function(i,article){
@@ -70,31 +73,39 @@ specific('4','#data4');
   });
   function generateArticleLinkTab(x){
     return '<li><a href="javascript:void(0)'
-          + '" onclick="goToArticleDetailPage(\''
-          + x.title
+          + '" onclick="goToArticleDetailPage2(\''
+          + x.Title
           + '\',\''
-          + x.picUrl
+          + x.Poin
           + '\',\''
-          + x.description
+          + x.Images
           + '\',\''
-          + x.refUrl + '\')">'
-          + x.title
+          + x.Umum
+          + '\',\''
+          + x.Konten
+          + '\',\''
+          + x.website + '\')">'
+          + x.Title
           + '</a></li>';
   }
 
   function generateArticleLink(x){
     return '<li><a href="javascript:void(0)'
-          + '" onclick="goToArticleDetailPage(\''
-          + x.title
+          + '" onclick="goToArticleDetailPage2(\''
+          + x.Title
           + '\',\''
-          + x.picUrl
+          + x.Poin
           + '\',\''
-          + x.description
+          + x.Images
           + '\',\''
-          + x.refUrl + '\')">'
-          + x.title + '<img src="'
-          + x.picUrl + '" class = "ui-li-has-thumb"/> <p>'
-          + x.description + '</p>'
+          + x.Umum
+          + '\',\''
+          + x.Konten
+          + '\',\''
+          + x.website + '\')">'
+          + x.Title + '<img src="'
+          + x.Poster + '" class = "ui-li-has-thumb"/> <p>'
+          + x.Tanggal + '</p>'
           + '</a></li>';
   }
 
@@ -109,7 +120,10 @@ specific('4','#data4');
     $.mobile.changePage( articlePage );
   }
 
-  
+
+
+
+
 
 </script>
 </head>
