@@ -111,8 +111,8 @@ specific('series','#data4');
           + x.Konten
           + '\',\''
           + x.website + '\')">'
-          + x.Title + '<img src="'
-          + x.Poster + '" class = "ui-li-has-thumb"/> <p>'
+          + x.Title + '<div class="thumbContainer"><img src="'
+          + x.Poster + '" class = "ui-li-has-thumb"/></div> <p>'
           + x.Tanggal + '</p>'
           + '</a></li>';
   }
@@ -203,7 +203,7 @@ specific('series','#data4');
 <form class="ui-filterable">
     <input id="filterBasic-input" data-type="search">
 </form>
-<ul data-role="listview" data-filter="true" data-input="#filterBasic-input" id="articleList">
+<ul data-role="listview" data-filter="true" data-input="#filterBasic-input" id="articleList" class="has-odd-thumb">
 </ul>
 </div>
 

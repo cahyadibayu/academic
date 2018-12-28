@@ -11,6 +11,10 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+#detail{
+  overflow: hidden;
+}
+
 
 #home{
   position: fixed;
@@ -67,4 +71,34 @@ white-space:pre-line;
     bottom: 0px;
     overflow:auto;
     -webkit-overflow-scrolling: touch;
+}
+
+.has-odd-thumb li a {
+
+    padding-left: 100px !important;
+
+}
+
+.thumbContainer {
+
+    position: absolute;
+
+    left: 0; top: 0; bottom: 0;
+
+    width: 80px;
+
+}
+
+.thumbContainer img {
+
+    position: absolute;
+
+    margin: auto;
+
+    bottom: 0; left: 0; top: 0; right: 0;
+
+    max-width: 80px;
+
+    max-height: 80px;
+
 }
